@@ -139,7 +139,9 @@
 	}
 
 	#skills-section{
-		height: 150vh;
+/* 		height: 150vh; */
+		margin-bottom: 300px;
+		z-index: 1;
 	}
 
 }
