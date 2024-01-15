@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="responsive.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-		<!-- <link rel="stylesheet" href="fontawesome/all.min.css">
-		<link rel="stylesheet" href="fontawesome/fontawesome.min.css"> -->
+		<link rel="stylesheet" href="fontawesome/all.min.css">
+		<link rel="stylesheet" href="fontawesome/fontawesome.min.css">
 		<title>Portfolio</title>
 	</head>
 	<body>
@@ -18,16 +18,16 @@
 				<div class="logo" id="icon"><img src="img/logo.png" alt=""></div>
 				<ul class="nav-menu">
 					<a href="#">
-						<li class="nav-item hover-line"><i class="fa fa-solid fa-home"></i>&nbsp;Home</li>
+						<li class="nav-item hover-line" onclick="hideNavMenu()"><i class="fa fa-solid fa-home"></i>&nbsp;Home</li>
 					</a>
 					<a href="#skills-section">
-						<li class="nav-item hover-line"><i class="fa fa-solid fa-briefcase"></i>&nbsp;Skills</li>
+						<li class="nav-item hover-line" onclick="hideNavMenu()"><i class="fa fa-solid fa-briefcase"></i>&nbsp;Skills</li>
 					</a>
 					<a href="#">
-						<li class="nav-item hover-line"><i class="fa fa-solid fa-laptop-code"></i>&nbsp;Projects</li>
+						<li class="nav-item hover-line" onclick="hideNavMenu()"><i class="fa fa-solid fa-laptop-code"></i>&nbsp;Projects</li>
 					</a>
-					<a href="#">
-						<li class="nav-item hover-line"><i class="fa fa-solid fa-address-card"></i>&nbsp;Contact Me</li>
+					<a href="#box">
+						<li class="nav-item hover-line" onclick="hideNavMenu()"><i class="fa fa-solid fa-address-card"></i>&nbsp;Contact Me</li>
 					</a>
 					<div class="nav-item search">
 						<form>
@@ -65,8 +65,8 @@
 			</section>
 			<!-- Hero Sction Ends -->
 			<!-- skills section starts -->
-			<div class="container">
-				<div id="skills-section">
+			<div class="container ">
+				<div id	="skills-section">
 					<span class="skills-sub">Why Choose Me</span>
 					
 					<div class="skills-container">
@@ -99,6 +99,99 @@
 								<span class="skills-bar skills-bs"></span>
 								<span class="fill-bar skills-bt"></span>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ##################### Skills section Ends ########################## -->
+			<!-- ##################### Contact Section Starts ########################## -->
+			<div class="container" id="box">
+				<div class="contactUs">
+					<div class="title">
+						<h2>Get in touch</h2>
+					</div>
+					<div class="box">
+						<div class="contact form">
+							<h3>Send a Message</h3>
+							<form>
+								<div class="formBox">
+									<div class="row50">
+										<div class="inputBox">
+											<span>First Name: </span>
+											<input type="text" placeholder="First Name">
+										</div>
+										<div class="inputBox">
+											<span>Last Name: </span>
+											<input type="text" placeholder="Last Name">
+										</div>
+									</div>
+									<div class="row50">
+										<div class="inputBox">
+											<span>Email: </span>
+											<input type="text" placeholder="example@gmail.com">
+										</div>
+										<div class="inputBox">
+											<span>Mobile: </span>
+											<input type="text" placeholder="Enter mobile number">
+										</div>
+									</div>
+									<div class="row100">
+										<div class="inputBox">
+											<span>Message: </span>
+											<textarea placeholder="write your opinion about my portfolio..."></textarea>
+										</div>
+									</div>
+									<div class="row100">
+										<div class="inputBox">
+											<input type="submit" value="Send">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="contact info">
+							<h3>Contact Info</h3>
+							<div class="infobox">
+								<div>
+									<span><i class="fa fa-location"></i></span>
+									<p>Manda, Titwala <br>India</p>
+								</div>
+								<div>
+									<span><i class="fa fa-solid fa-envelope"></i></span>
+									<a href="mailto:tayde839@gmail.com">tayde839@gmail.com</a>
+								</div>
+								<div>
+									<span><i class="fa fa-solid fa-phone"></i></span>
+									<a href="tel:+919136257225">+91 9136257225</a>
+								</div>
+								<!-- ######## Social Media icons ########## -->
+								<ul class="sci">
+									<li>
+										<a href="#" name="logo-facebook">
+											<i class="fa fa-brands fa-square-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" name="logo-twitter">
+											<i class="fa fa-brands fa-square-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" name="logo-linkedin">
+											<i class="fa fa-brands fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" name="logo-instagram"
+											><i class="fa fa-brands fa-instagram"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30125.71731571665!2d73.18933515885402!3d19.294770800590335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7911ecd3c3039%3A0x1bdc80be70ed4879!2sTitwala%2C%20Maharashtra%20421605!5e0!3m2!1sen!2sin!4v1705239889380!5m2!1sen!2sin" 
+							style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>

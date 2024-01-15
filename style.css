@@ -39,14 +39,14 @@ body{
 }
 
 /*######################################### navbar starts ##############################*/
-a{
+.nav-menu a{
 	text-decoration: none;
 	color: var(--text-color);
 	font-size: 20px;
 	transition: 0.3 all;
 }
 
-a:hover{
+.nav-menu a:hover{
 	color:var(--secondary-color);
 }
 
@@ -64,7 +64,7 @@ a:hover{
 	content: '';
 	display: block;
 	width: 0%;
-	height: 1px;
+	height: 2px;
 	background-color:var(--secondary-color);
 	transition: width .3;
 }
@@ -174,14 +174,16 @@ nav ul{
 	align-items: center;
 	position: absolute;
 	right: 0;
-	top: 150px;
+	top: 100px;
 }
 
-.hero-content a{
+.download-btn{
 	background-color: var(--blue-color);
 	padding: 0.8rem;
 	border-radius: 10px;
 	padding: 12px 12px;
+	color: #000;
+	text-decoration: none;
 }
 
 .hero-content a:active{
@@ -383,18 +385,179 @@ span.skills-sub{
 		width: 30%;
 	}
 }
+/* ###################################### contact section ############################### */
 
+.contactUs{
+	background-color:#FE2919;
+	position: relative;
+	width: 100%;
+	padding: 40px 100px;
+/* 	border-top: 5px solid var(--secondary-color); */;;
+	border-bottom: 5px solid var(--secondary-color);
+}
 
+.contactUs .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
 
+.contactUs .title h2{
+	color: #000;
+	font-weight: 500;
+}
 
+.box{
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 5fr 4fr;
+	grid-template-areas: 
+	"form info" "form map";
+	grid-gap: 20px;
+	margin-top: 20px;
+}
 
+.form{
+	grid-area: form;
+}
 
+.map{
+	grid-area:map;
+}
 
+.contact{
+	padding: 30px;
+	background: #fff;
+}
 
+.info{
+	grid-area:info;
+	background-color: #F23DC7;
+}
 
+.contact h3{
+	margin-bottom: 20px;
+}
 
+/* ############################## form Section ####################### */
 
+.formBox{
+	position: relative;
+	width: 100%;
+}
 
+.formBox .row50{
+	display: flex;
+	gap: 20px;
+}
+
+.inputBox{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.formBox .row100 .inputBox{
+	width: 100%;
+}
+
+.inputBox span{
+	font-size: 1.2rem;
+	color: #0837E6;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.inputBox input{
+	padding: 10px;
+	font-size: 1.1rem;
+	outline: none;
+	border: 1px solid #333;
+}
+
+.inputBox textarea{
+	padding: 10px;
+	font-size: 1.1rem;
+	outline: none;
+	border: 1px solid #333;
+	resize: none;
+	min-height: 220px;
+	margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+	background-color: #C9188F;
+	color: #fff;
+	border: none;
+	font-size: 1.1rem;
+	max-width: 120px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 14px 15px;
+}
+
+/* ############### Info section ################## */
+.info .infobox div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.info .infobox div span{
+	min-width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #044A98;
+	font-size: 1.4em;
+	margin-right: 10px;
+}
+
+.info .infobox div a{
+	color: #fff;
+	text-decoration: none;
+	color: black;
+}
+
+.sci{
+	margin-top: 40px;
+	display: flex;
+}
+
+.infobox ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+.sci li{
+	list-style: none;
+	margin-right: 15px;
+
+}
+
+.sci li a{
+	font-size: 3em;
+	color: #ccc;
+}
+
+.sci li a:hover{
+	color: white;
+}
+
+/* ########################### Map ############################# */
+.map{
+	padding: 0;
+}
+
+.map iframe{
+	width: 100%;
+	height: 100%;
+}
 
 
 
